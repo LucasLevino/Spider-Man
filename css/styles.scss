@@ -4,27 +4,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
-    
+
 }
 
-// Colors 
-
-$blue: #14181F;
-$blue-dark: #0A0C10;
-$blue-light: #272A31;
-
-$red: #B31317;
-$red-dark: #EA1D22;
-$red-light: #F02A2F;
-
-$white: #EDF1F7;
-$white-dark: #F4F7FB;
-$white-light: #F4F7FB;
-
-$gray-1: #B5B6B8;
-$gray-2: #A1A3A5;
-$gray-3: #959698;
-
+@import 'partials/colors';
+@import 'partials/spacing';
 
 body {
 
