@@ -1,13 +1,11 @@
 .container {
 
-    border: 1px solid red;
-
     max-width: 1440px;
     margin: 0 auto;
 
     padding: 36px 16px;
 
-    overflow: hidden;
+    overflow: none;
 
     height: 85vh;
 
@@ -19,7 +17,7 @@
     
         flex-direction: column;
         height: auto;
-        overflow: none;
+        overflow: hidden;
     
     }
 
@@ -177,14 +175,37 @@
 
 }
 
-bg-video {
+.bg-video {
 
     position: absolute;
 
     top: 0;
     left: 0;
 
+    z-index: -1;
+    overflow: hidden;
+
     width: 100%;
     height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+    
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+
+        display: block;
+        position: absolute;
+
+        background: linear-gradient(101.47deg, #0A0C10 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #0A0C10 73.17%);
+    
+    }
 
 }
