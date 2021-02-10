@@ -7,8 +7,20 @@
 
 }
 
+
+// Reminder: @mixin call functions in sass 
+
+@mixin responsive() {
+
+    @media screen and (max-width: 960px) {
+        @content
+    } 
+
+}
+
 @import 'partials/colors';
 @import 'partials/spacing';
+@import 'partials/flex';
 
 body {
 
@@ -45,6 +57,12 @@ p {
     color: $gray-3;
     letter-spacing: 1px;
     line-height: 140%;
+
+}
+
+.w-auto {
+
+    width: auto;
 
 }
 

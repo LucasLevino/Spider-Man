@@ -311,6 +311,18 @@
   padding-bottom: 72px;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -336,6 +348,10 @@ p {
   color: #959698;
   letter-spacing: 1px;
   line-height: 140%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 header {
@@ -378,6 +394,12 @@ header {
 
 .nav-list li {
   margin-left: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .logo {
@@ -441,12 +463,33 @@ header {
           transform: translate3d(0, -1.5px, 0);
 }
 
+@media screen and (max-width: 960px) {
+  .nav-social {
+    display: none;
+  }
+}
+
+.bx {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #EDF1F7;
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .bx {
+    display: block;
+  }
+}
+
 .container {
   border: 1px solid red;
   max-width: 1440px;
   margin: 0 auto;
   padding: 36px 16px;
   overflow: hidden;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,6 +500,17 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    overflow: none;
+  }
 }
 
 .container-item-1 {
@@ -473,10 +527,22 @@ header {
           align-items: flex-start;
 }
 
+.container-item-2 {
+  height: auto;
+}
+
 .spiderman {
   width: 150%;
   -webkit-transform: translate3d(-170px, 0, 0);
           transform: translate3d(-170px, 0, 0);
+}
+
+@media screen and (max-width: 960px) {
+  .spiderman {
+    width: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 .btn {
@@ -565,5 +631,13 @@ header {
 
 .btn-secondary:hover::after {
   width: 101%;
+}
+
+bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

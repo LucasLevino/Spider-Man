@@ -36,6 +36,12 @@ header {
     
     }
 
+    @include responsive() {
+    
+        display: none;
+    
+    }
+
 }
 
 .logo {
@@ -115,6 +121,30 @@ header {
             }
 
         }
+    
+    }
+
+    @include responsive() {
+    
+        display: none;
+    
+    }
+
+}
+
+.bx {
+
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+
+    background-color: $white;
+
+    display: none;
+
+    @include responsive() {
+    
+        display: block;
     
     }
 
